@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jain Temples of the Fort | Jaisalmer Tourism</title>
+<meta name="description" content="A visitor's guide to the heritage sites of Jaisalmer, the Golden City of Rajasthan.">
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span class="brand-name">Jaisalmer</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="nav" id="main-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="heritage.html" class="active" aria-current="page">Heritage</a></li>
+          <li><a href="hotel.html">Hotel Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="heritage.html">Heritage</a> / Jain Temples of the Fort</p>
+  <section class="site-hero">
+    <div>
+      <p class="eyebrow">Heritage site 02 of 12 · <span lang="hi" class="devanagari">जैन मंदिर</span></p>
+      <h1>Jain Temples of the Fort</h1>
+      <p class="tagline">Lace carved in yellow stone</p>
+      <div class="facts">
+        <dl>
+        <dt>Built</dt><dd>12th – 16th century</dd>
+        <dt>Built by</dt><dd>Jain merchant families of Jaisalmer</dd>
+        <dt>Style</dt><dd>Dilwara-style Jain temple architecture</dd>
+        <dt>Location</dt><dd>Inside Jaisalmer Fort</dd>
+        <dt>Dedicated to</dt><dd>Tirthankaras including Parshvanath, Rishabhanath and Sambhavnath</dd>
+        <dt>Visiting hours</dt><dd>Mornings, about 8:00 am – 12:00 noon</dd>
+        <dt>Note</dt><dd>Leather items are not allowed inside</dd>
+        </dl>
+      </div>
+    </div>
+    <figure class="arch tall"><img src="images/photos/jain-temples.jpg" alt="Jain Temples of the Fort" width="600" height="800"></figure>
+  </section>
+
+  <div class="site-body">
+    <section class="panel">
+      <h2>About the site</h2>
+      <div class="prose">
+        <p>Inside the fort stands a group of seven Jain temples joined by corridors and stairways. Every surface is carved: pillars, ceilings, brackets and walls are covered with dancers, musicians, animals, flowers and figures of the Tirthankaras, the great teachers of the Jain faith. The carving is so fine that the stone looks almost like lace.</p>
+        <p>The largest temple is dedicated to Parshvanath, the 23rd Tirthankara. Below the Sambhavnath temple is the Gyan Bhandar, a library that holds palm-leaf and paper manuscripts, some of them many centuries old.</p>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>History</h2>
+      <div class="prose">
+        <p>Jaisalmer&#x27;s wealth came from trade, and many of its richest traders were Jain. Over about four hundred years they paid for these temples, which is why styles change from one shrine to the next while still sharing the same golden stone.</p>
+        <p>Jain monks gathered and protected rare manuscripts here, especially in times of war. The Gyan Bhandar collection is one of the most important Jain libraries in India and is still looked after by the Jain community.</p>
+      </div>
+    </section>
+    <section class="panel wide">
+      <h2>Timeline</h2>
+      <ol class="timeline">
+        <li><span class="yr">12th c.</span>Earliest temples built inside the fort</li>
+        <li><span class="yr">15th c.</span>Parshvanath temple and Gyan Bhandar library established</li>
+        <li><span class="yr">16th c.</span>Last temples of the group completed</li>
+      </ol>
+    </section>
+  </div>
+  <nav class="pager" aria-label="Other heritage sites"><a class="btn btn-ghost" href="jaisalmer-fort.html">← Jaisalmer Fort</a><a class="btn btn-gold" href="kuldhara.html">Kuldhara →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Jaisalmer Heritage Trails · a guide to the Golden City of the Thar</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="hotel.html">Hotel Booking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Phone menu: show or hide the tabs
+  (function () {
+    var header = document.querySelector('.site-header');
+    var btn = document.querySelector('.menu-toggle');
+    btn.addEventListener('click', function () {
+      var open = header.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>

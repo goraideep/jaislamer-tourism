@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery | Jaisalmer Tourism</title>
+<meta name="description" content="A visitor's guide to the heritage sites of Jaisalmer, the Golden City of Rajasthan.">
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span class="brand-name">Jaisalmer</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="nav" id="main-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="heritage.html">Heritage</a></li>
+          <li><a href="hotel.html">Hotel Booking</a></li>
+          <li><a href="gallery.html" class="active" aria-current="page">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Gallery</h1>
+  <p class="lede">12 views of Jaisalmer's heritage sites. Select a picture to view it full screen, and use the arrow keys to move between them.</p>
+  <div class="filters" role="group" aria-label="Filter by type">
+    <button type="button" data-filter="all" aria-pressed="true">All sites</button>
+    <button type="button" data-filter="forts" aria-pressed="false">Forts & Palaces</button>
+    <button type="button" data-filter="havelis" aria-pressed="false">Havelis</button>
+    <button type="button" data-filter="temples" aria-pressed="false">Temples</button>
+    <button type="button" data-filter="lakes" aria-pressed="false">Lakes</button>
+    <button type="button" data-filter="memorials" aria-pressed="false">Cenotaphs & Memorials</button>
+    <button type="button" data-filter="villages" aria-pressed="false">Villages</button>
+  </div>
+  <ul class="gallery">
+    <li data-cat="forts">
+      <button class="shot" type="button" data-full="images/photos/jaisalmer-fort.jpg" data-site="jaisalmer-fort" data-name="Jaisalmer Fort" data-cap="Bastions of the Golden Fort above the city">
+        <img src="images/photos/jaisalmer-fort.jpg" alt="Jaisalmer Fort: Bastions of the Golden Fort above the city" width="400" height="300" loading="lazy">
+        <span><strong>Jaisalmer Fort</strong><small>Bastions of the Golden Fort above the city</small></span>
+      </button>
+    </li>
+    <li data-cat="forts">
+      <button class="shot" type="button" data-full="images/photos/raj-mahal.jpg" data-site="raj-mahal" data-name="Raj Mahal" data-cap="The Raj Mahal facing Dussehra Chowk">
+        <img src="images/photos/raj-mahal.jpg" alt="Raj Mahal: The Raj Mahal facing Dussehra Chowk" width="400" height="300" loading="lazy">
+        <span><strong>Raj Mahal</strong><small>The Raj Mahal facing Dussehra Chowk</small></span>
+      </button>
+    </li>
+    <li data-cat="temples">
+      <button class="shot" type="button" data-full="images/photos/jain-temples.jpg" data-site="jain-temples" data-name="Jain Temples of the Fort" data-cap="Carved spires of the Jain temples">
+        <img src="images/photos/jain-temples.jpg" alt="Jain Temples of the Fort: Carved spires of the Jain temples" width="400" height="300" loading="lazy">
+        <span><strong>Jain Temples of the Fort</strong><small>Carved spires of the Jain temples</small></span>
+      </button>
+    </li>
+    <li data-cat="temples">
+      <button class="shot" type="button" data-full="images/photos/jain-temples-interior.jpg" data-site="jain-temples" data-name="Jain Temples of the Fort" data-cap="Pillars and painted dome inside a temple">
+        <img src="images/photos/jain-temples-interior.jpg" alt="Jain Temples of the Fort: Pillars and painted dome inside a temple" width="400" height="300" loading="lazy">
+        <span><strong>Jain Temples of the Fort</strong><small>Pillars and painted dome inside a temple</small></span>
+      </button>
+    </li>
+    <li data-cat="lakes">
+      <button class="shot" type="button" data-full="images/photos/gadisar-lake.jpg" data-site="gadisar-lake" data-name="Gadisar Lake" data-cap="Tilon ki Pol, with a chhatri on the lake beyond">
+        <img src="images/photos/gadisar-lake.jpg" alt="Gadisar Lake: Tilon ki Pol, with a chhatri on the lake beyond" width="400" height="300" loading="lazy">
+        <span><strong>Gadisar Lake</strong><small>Tilon ki Pol, with a chhatri on the lake beyond</small></span>
+      </button>
+    </li>
+    <li data-cat="memorials">
+      <button class="shot" type="button" data-full="images/photos/bada-bagh.jpg" data-site="bada-bagh" data-name="Bada Bagh" data-cap="Royal cenotaphs at Bada Bagh">
+        <img src="images/photos/bada-bagh.jpg" alt="Bada Bagh: Royal cenotaphs at Bada Bagh" width="400" height="300" loading="lazy">
+        <span><strong>Bada Bagh</strong><small>Royal cenotaphs at Bada Bagh</small></span>
+      </button>
+    </li>
+    <li data-cat="havelis">
+      <button class="shot" type="button" data-full="images/photos/patwon-ki-haveli.jpg" data-site="patwon-ki-haveli" data-name="Patwon ki Haveli" data-cap="Jharokhas of Patwon ki Haveli">
+        <img src="images/photos/patwon-ki-haveli.jpg" alt="Patwon ki Haveli: Jharokhas of Patwon ki Haveli" width="400" height="300" loading="lazy">
+        <span><strong>Patwon ki Haveli</strong><small>Jharokhas of Patwon ki Haveli</small></span>
+      </button>
+    </li>
+    <li data-cat="havelis">
+      <button class="shot" type="button" data-full="images/photos/salim-singh-ki-haveli.jpg" data-site="salim-singh-ki-haveli" data-name="Salim Singh ki Haveli" data-cap="The arched top storey">
+        <img src="images/photos/salim-singh-ki-haveli.jpg" alt="Salim Singh ki Haveli: The arched top storey" width="400" height="300" loading="lazy">
+        <span><strong>Salim Singh ki Haveli</strong><small>The arched top storey</small></span>
+      </button>
+    </li>
+    <li data-cat="havelis">
+      <button class="shot" type="button" data-full="images/photos/nathmal-ki-haveli.jpg" data-site="nathmal-ki-haveli" data-name="Nathmal ki Haveli" data-cap="Stone elephants at the entrance">
+        <img src="images/photos/nathmal-ki-haveli.jpg" alt="Nathmal ki Haveli: Stone elephants at the entrance" width="400" height="300" loading="lazy">
+        <span><strong>Nathmal ki Haveli</strong><small>Stone elephants at the entrance</small></span>
+      </button>
+    </li>
+    <li data-cat="forts">
+      <button class="shot" type="button" data-full="images/photos/mandir-palace.jpg" data-site="mandir-palace" data-name="Mandir Palace" data-cap="Carved balconies of the palace">
+        <img src="images/photos/mandir-palace.jpg" alt="Mandir Palace: Carved balconies of the palace" width="400" height="300" loading="lazy">
+        <span><strong>Mandir Palace</strong><small>Carved balconies of the palace</small></span>
+      </button>
+    </li>
+    <li data-cat="villages">
+      <button class="shot" type="button" data-full="images/photos/kuldhara.jpg" data-site="kuldhara" data-name="Kuldhara" data-cap="Streets and temple of the empty village">
+        <img src="images/photos/kuldhara.jpg" alt="Kuldhara: Streets and temple of the empty village" width="400" height="300" loading="lazy">
+        <span><strong>Kuldhara</strong><small>Streets and temple of the empty village</small></span>
+      </button>
+    </li>
+    <li data-cat="memorials">
+      <button class="shot" type="button" data-full="images/photos/longewala-war-memorial.jpg" data-site="longewala-war-memorial" data-name="Longewala War Memorial" data-cap="A captured T-59 tank">
+        <img src="images/photos/longewala-war-memorial.jpg" alt="Longewala War Memorial: A captured T-59 tank" width="400" height="300" loading="lazy">
+        <span><strong>Longewala War Memorial</strong><small>A captured T-59 tank</small></span>
+      </button>
+    </li>
+  </ul>
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lb-btn lb-close" type="button">Close ✕</button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Previous photo">←</button>
+    <button class="lb-btn lb-next" type="button" aria-label="Next photo">→</button>
+    <figure><img id="lb-img" src="images/photos/jaisalmer-fort.jpg" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Jaisalmer Heritage Trails · a guide to the Golden City of the Thar</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="hotel.html">Hotel Booking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Phone menu: show or hide the tabs
+  (function () {
+    var header = document.querySelector('.site-header');
+    var btn = document.querySelector('.menu-toggle');
+    btn.addEventListener('click', function () {
+      var open = header.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+<script>
+  // Category filter: show only the cards whose data-cat matches
+  (function () {
+    var buttons = document.querySelectorAll('.filters button');
+    var items = document.querySelectorAll('[data-cat]');
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () {
+        buttons.forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
+        b.setAttribute('aria-pressed', 'true');
+        var cat = b.dataset.filter;
+        items.forEach(function (it) { it.hidden = !(cat === 'all' || it.dataset.cat === cat); });
+      });
+    });
+  })();
+</script>
+<script>
+  // Full-screen photo viewer with arrow keys
+  (function () {
+    var box = document.getElementById('lightbox');
+    var img = document.getElementById('lb-img');
+    var cap = document.getElementById('lb-cap');
+    var shots = Array.prototype.slice.call(document.querySelectorAll('.shot'));
+    var current = 0;
+    function visible() { return shots.filter(function (s) { return !s.closest('li').hidden; }); }
+    function show(btn) {
+      img.src = btn.dataset.full;
+      img.alt = btn.dataset.name + ': ' + btn.dataset.cap;
+      cap.innerHTML = '';
+      var t = document.createElement('span'); t.textContent = btn.dataset.name + ' — ' + btn.dataset.cap;
+      var a = document.createElement('a'); a.href = btn.dataset.site + '.html'; a.textContent = 'About this site';
+      cap.appendChild(t); cap.appendChild(a);
+      current = visible().indexOf(btn);
+    }
+    function step(d) { var v = visible(); show(v[(current + d + v.length) % v.length]); }
+    function close() { box.hidden = true; document.body.style.overflow = ''; }
+    shots.forEach(function (b) {
+      b.addEventListener('click', function () { show(b); box.hidden = false; document.body.style.overflow = 'hidden'; box.querySelector('.lb-close').focus(); });
+    });
+    box.querySelector('.lb-close').addEventListener('click', close);
+    box.querySelector('.lb-prev').addEventListener('click', function () { step(-1); });
+    box.querySelector('.lb-next').addEventListener('click', function () { step(1); });
+    box.addEventListener('click', function (ev) { if (ev.target === box) close(); });
+    document.addEventListener('keydown', function (ev) {
+      if (box.hidden) return;
+      if (ev.key === 'Escape') close();
+      if (ev.key === 'ArrowRight') step(1);
+      if (ev.key === 'ArrowLeft') step(-1);
+    });
+  })();
+</script>
+</body>
+</html>

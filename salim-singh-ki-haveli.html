@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salim Singh ki Haveli | Jaisalmer Tourism</title>
+<meta name="description" content="A visitor's guide to the heritage sites of Jaisalmer, the Golden City of Rajasthan.">
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span class="brand-name">Jaisalmer</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="nav" id="main-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="heritage.html" class="active" aria-current="page">Heritage</a></li>
+          <li><a href="hotel.html">Hotel Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="heritage.html">Heritage</a> / Salim Singh ki Haveli</p>
+  <section class="site-hero">
+    <div>
+      <p class="eyebrow">Heritage site 09 of 12 · <span lang="hi" class="devanagari">सालिम सिंह की हवेली</span></p>
+      <h1>Salim Singh ki Haveli</h1>
+      <p class="tagline">The prime minister&#x27;s peacock mansion</p>
+      <div class="facts">
+        <dl>
+        <dt>Built</dt><dd>1815</dd>
+        <dt>Built by</dt><dd>Salim Singh Mehta, prime minister (diwan) of Jaisalmer</dd>
+        <dt>Style</dt><dd>Rajasthani haveli</dd>
+        <dt>Location</dt><dd>Near the eastern side of the fort</dd>
+        <dt>Features</dt><dd>Moti Mahal top floor, 38 balconies</dd>
+        <dt>Visiting hours</dt><dd>Daily, about 8:00 am – 6:00 pm</dd>
+        <dt>Note</dt><dd>Still partly lived in by descendants</dd>
+        </dl>
+      </div>
+    </div>
+    <figure class="arch tall"><img src="images/photos/salim-singh-ki-haveli.jpg" alt="Salim Singh ki Haveli" width="600" height="800"></figure>
+  </section>
+
+  <div class="site-body">
+    <section class="panel">
+      <h2>About the site</h2>
+      <div class="prose">
+        <p>Salim Singh ki Haveli is easy to spot because its top storey is wider than the floors below, jutting out over the street on carved brackets. This upper floor, the Moti Mahal, has a row of balconies and a roof shaped in curved arches, said to resemble a peacock.</p>
+        <p>The haveli has 38 balconies, each with a different carved design. The lower floors are much plainer, which makes the ornate top look even richer.</p>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>History</h2>
+      <div class="prose">
+        <p>Salim Singh Mehta was the diwan, or prime minister, of Jaisalmer in the early 19th century, and one of the most powerful men in the state. He built this haveli in 1815 over part of an older 17th-century house.</p>
+        <p>Legend says he wanted it to rise as high as the Maharawal&#x27;s palace in the fort, and that the ruler had the extra storeys stopped. Salim Singh is also remembered for his heavy taxes, which are often blamed for the abandonment of Kuldhara and other Paliwal villages.</p>
+      </div>
+    </section>
+    <section class="panel wide">
+      <h2>Timeline</h2>
+      <ol class="timeline">
+        <li><span class="yr">17th c.</span>Earlier family house built on the site</li>
+        <li><span class="yr">1815</span>Salim Singh builds the present haveli</li>
+        <li><span class="yr">c. 1825</span>His harsh rule is linked to the Paliwal villagers leaving</li>
+      </ol>
+    </section>
+  </div>
+  <nav class="pager" aria-label="Other heritage sites"><a class="btn btn-ghost" href="patwon-ki-haveli.html">← Patwon ki Haveli</a><a class="btn btn-gold" href="mandir-palace.html">Mandir Palace →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Jaisalmer Heritage Trails · a guide to the Golden City of the Thar</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="hotel.html">Hotel Booking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Phone menu: show or hide the tabs
+  (function () {
+    var header = document.querySelector('.site-header');
+    var btn = document.querySelector('.menu-toggle');
+    btn.addEventListener('click', function () {
+      var open = header.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>

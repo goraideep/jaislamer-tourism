@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bada Bagh | Jaisalmer Tourism</title>
+<meta name="description" content="A visitor's guide to the heritage sites of Jaisalmer, the Golden City of Rajasthan.">
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span class="brand-name">Jaisalmer</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="nav" id="main-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="heritage.html" class="active" aria-current="page">Heritage</a></li>
+          <li><a href="hotel.html">Hotel Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="heritage.html">Heritage</a> / Bada Bagh</p>
+  <section class="site-hero">
+    <div>
+      <p class="eyebrow">Heritage site 07 of 12 · <span lang="hi" class="devanagari">बड़ा बाग़</span></p>
+      <h1>Bada Bagh</h1>
+      <p class="tagline">Royal cenotaphs on the hill</p>
+      <div class="facts">
+        <dl>
+        <dt>Built</dt><dd>From the 16th century</dd>
+        <dt>Built by</dt><dd>Maharawal Lunakaran, in memory of his father Jait Singh II</dd>
+        <dt>Style</dt><dd>Royal cenotaphs (chhatris)</dd>
+        <dt>Location</dt><dd>About 6 km north of the city</dd>
+        <dt>Getting there</dt><dd>Taxi or auto-rickshaw</dd>
+        <dt>Visiting hours</dt><dd>Daily, about 8:00 am – 6:00 pm</dd>
+        <dt>Best time</dt><dd>Sunset</dd>
+        </dl>
+      </div>
+    </div>
+    <figure class="arch tall"><img src="images/photos/bada-bagh.jpg" alt="Bada Bagh" width="600" height="800"></figure>
+  </section>
+
+  <div class="site-body">
+    <section class="panel">
+      <h2>About the site</h2>
+      <div class="prose">
+        <p>Bada Bagh, the &quot;big garden&quot;, is a group of chhatris, domed pavilions built as memorials to the rulers of Jaisalmer and their families. They stand in rows on a low hill above a dam and a garden. Each chhatri has carved pillars and a dome, and many have an inscribed stone slab inside.</p>
+        <p>The site is famous at sunset, when the golden domes stand out against the sky. Behind them, wind turbines now line the ridge, making it a striking mix of old and new.</p>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>History</h2>
+      <div class="prose">
+        <p>Maharawal Jait Singh II began building a dam and garden here in the early 16th century. After his death, his son Lunakaran completed the garden and built a chhatri in his memory. Later rulers were also remembered here, so the number of cenotaphs grew over the centuries.</p>
+        <p>The dam held water for the garden, which once grew fruit and vegetables for the city. Some of the later chhatris were never finished.</p>
+      </div>
+    </section>
+    <section class="panel wide">
+      <h2>Timeline</h2>
+      <ol class="timeline">
+        <li><span class="yr">Early 16th c.</span>Jait Singh II begins the dam and garden</li>
+        <li><span class="yr">16th c.</span>Lunakaran completes the garden and his father&#x27;s chhatri</li>
+        <li><span class="yr">16th – 20th c.</span>Cenotaphs added for later rulers</li>
+      </ol>
+    </section>
+  </div>
+  <nav class="pager" aria-label="Other heritage sites"><a class="btn btn-ghost" href="raj-mahal.html">← Raj Mahal</a><a class="btn btn-gold" href="patwon-ki-haveli.html">Patwon ki Haveli →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Jaisalmer Heritage Trails · a guide to the Golden City of the Thar</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="hotel.html">Hotel Booking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Phone menu: show or hide the tabs
+  (function () {
+    var header = document.querySelector('.site-header');
+    var btn = document.querySelector('.menu-toggle');
+    btn.addEventListener('click', function () {
+      var open = header.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>

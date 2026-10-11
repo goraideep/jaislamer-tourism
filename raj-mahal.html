@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raj Mahal | Jaisalmer Tourism</title>
+<meta name="description" content="A visitor's guide to the heritage sites of Jaisalmer, the Golden City of Rajasthan.">
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span class="brand-name">Jaisalmer</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="nav" id="main-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="heritage.html" class="active" aria-current="page">Heritage</a></li>
+          <li><a href="hotel.html">Hotel Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="heritage.html">Heritage</a> / Raj Mahal</p>
+  <section class="site-hero">
+    <div>
+      <p class="eyebrow">Heritage site 06 of 12 · <span lang="hi" class="devanagari">राज महल</span></p>
+      <h1>Raj Mahal</h1>
+      <p class="tagline">Palace of the Maharawals</p>
+      <div class="facts">
+        <dl>
+        <dt>Built</dt><dd>Mainly 16th – 19th century</dd>
+        <dt>Built by</dt><dd>Successive Maharawals of Jaisalmer</dd>
+        <dt>Style</dt><dd>Rajput palace</dd>
+        <dt>Location</dt><dd>Dussehra Chowk, inside the fort</dd>
+        <dt>Now</dt><dd>Fort Palace Museum</dd>
+        <dt>Visiting hours</dt><dd>Daily, about 9:00 am – 6:00 pm</dd>
+        <dt>Highlights</dt><dd>Rooftop views, marble throne, Rang Mahal</dd>
+        </dl>
+      </div>
+    </div>
+    <figure class="arch tall"><img src="images/photos/raj-mahal.jpg" alt="Raj Mahal" width="600" height="800"></figure>
+  </section>
+
+  <div class="site-body">
+    <section class="panel">
+      <h2>About the site</h2>
+      <div class="prose">
+        <p>The Raj Mahal is a tall palace of several storeys facing the main square of the fort. Its front is covered with jharokhas, the carved stone bay windows of Rajasthan, which let the royal women watch the square without being seen.</p>
+        <p>Inside, the Fort Palace Museum leads through painted rooms, small courtyards and the royal apartments, and shows weapons, costumes and the marble throne of the Maharawals. The roof has the best views over the fort and out across the desert.</p>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>History</h2>
+      <div class="prose">
+        <p>The Maharawals built and rebuilt their palace over several centuries, adding new wings such as the Rang Mahal and the Sarvottam Vilas, which is decorated with blue tiles and glass mosaic.</p>
+        <p>The royal family later moved out of the fort to Mandir Palace in the town below. The old palace became a museum, run by a trust connected to the royal family.</p>
+      </div>
+    </section>
+    <section class="panel wide">
+      <h2>Timeline</h2>
+      <ol class="timeline">
+        <li><span class="yr">16th c.</span>Main palace buildings take shape</li>
+        <li><span class="yr">18th c.</span>Sarvottam Vilas added with tile and glass work</li>
+        <li><span class="yr">19th c.</span>Royal family moves to Mandir Palace</li>
+        <li><span class="yr">Today</span>Open as the Fort Palace Museum</li>
+      </ol>
+    </section>
+  </div>
+  <nav class="pager" aria-label="Other heritage sites"><a class="btn btn-ghost" href="laxminath-temple.html">← Laxminath Temple</a><a class="btn btn-gold" href="bada-bagh.html">Bada Bagh →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Jaisalmer Heritage Trails · a guide to the Golden City of the Thar</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="hotel.html">Hotel Booking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Phone menu: show or hide the tabs
+  (function () {
+    var header = document.querySelector('.site-header');
+    var btn = document.querySelector('.menu-toggle');
+    btn.addEventListener('click', function () {
+      var open = header.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>

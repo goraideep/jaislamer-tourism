@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nathmal ki Haveli | Jaisalmer Tourism</title>
+<meta name="description" content="A visitor's guide to the heritage sites of Jaisalmer, the Golden City of Rajasthan.">
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span class="brand-name">Jaisalmer</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="nav" id="main-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="heritage.html" class="active" aria-current="page">Heritage</a></li>
+          <li><a href="hotel.html">Hotel Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="heritage.html">Heritage</a> / Nathmal ki Haveli</p>
+  <section class="site-hero">
+    <div>
+      <p class="eyebrow">Heritage site 11 of 12 · <span lang="hi" class="devanagari">नथमल की हवेली</span></p>
+      <h1>Nathmal ki Haveli</h1>
+      <p class="tagline">One mansion, two carvers</p>
+      <div class="facts">
+        <dl>
+        <dt>Built</dt><dd>1885</dd>
+        <dt>Built by</dt><dd>For Diwan Mohata Nathmal; carved by the brothers Hathi and Lulu</dd>
+        <dt>Style</dt><dd>Rajasthani haveli</dd>
+        <dt>Location</dt><dd>Near the fort, old city</dd>
+        <dt>Features</dt><dd>Stone elephants at the entrance; mismatched halves</dd>
+        <dt>Visiting hours</dt><dd>Daily, about 8:00 am – 7:00 pm</dd>
+        <dt>Note</dt><dd>Still a family home; ground floor open</dd>
+        </dl>
+      </div>
+    </div>
+    <figure class="arch tall"><img src="images/photos/nathmal-ki-haveli.jpg" alt="Nathmal ki Haveli" width="600" height="800"></figure>
+  </section>
+
+  <div class="site-body">
+    <section class="panel">
+      <h2>About the site</h2>
+      <div class="prose">
+        <p>Nathmal ki Haveli is a five-storey mansion carved from a single colour of yellow sandstone. Two life-size stone elephants stand at the entrance as guards, and the front is covered with jharokhas, flowers and figures.</p>
+        <p>Look closely and the left and right halves do not quite match. Inside, wall paintings show horses and cattle alongside newer things the carvers had only heard about, such as bicycles, cars and steam engines.</p>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>History</h2>
+      <div class="prose">
+        <p>The haveli was built in 1885 for Diwan Mohata Nathmal, the prime minister of Jaisalmer. The work was given to two brothers, Hathi and Lulu, who each took one half of the building.</p>
+        <p>They worked at the same time but separately, without fully matching their designs. The small differences between the two sides are now the haveli&#x27;s most famous feature.</p>
+      </div>
+    </section>
+    <section class="panel wide">
+      <h2>Timeline</h2>
+      <ol class="timeline">
+        <li><span class="yr">1885</span>Haveli built for Diwan Mohata Nathmal</li>
+        <li><span class="yr">Today</span>Lived in by descendants, with the ground floor open to visitors</li>
+      </ol>
+    </section>
+  </div>
+  <nav class="pager" aria-label="Other heritage sites"><a class="btn btn-ghost" href="mandir-palace.html">← Mandir Palace</a><a class="btn btn-gold" href="longewala-war-memorial.html">Longewala War Memorial →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Jaisalmer Heritage Trails · a guide to the Golden City of the Thar</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="hotel.html">Hotel Booking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Phone menu: show or hide the tabs
+  (function () {
+    var header = document.querySelector('.site-header');
+    var btn = document.querySelector('.menu-toggle');
+    btn.addEventListener('click', function () {
+      var open = header.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>

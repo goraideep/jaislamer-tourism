@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jaisalmer Fort | Jaisalmer Tourism</title>
+<meta name="description" content="A visitor's guide to the heritage sites of Jaisalmer, the Golden City of Rajasthan.">
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span class="brand-name">Jaisalmer</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="nav" id="main-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="heritage.html" class="active" aria-current="page">Heritage</a></li>
+          <li><a href="hotel.html">Hotel Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="heritage.html">Heritage</a> / Jaisalmer Fort</p>
+  <section class="site-hero">
+    <div>
+      <p class="eyebrow">Heritage site 01 of 12 · <span lang="hi" class="devanagari">सोनार क़िला</span></p>
+      <h1>Jaisalmer Fort</h1>
+      <p class="tagline">The Golden Fort of the Thar</p>
+      <div class="facts">
+        <dl>
+        <dt>Built</dt><dd>1156, enlarged over the next six centuries</dd>
+        <dt>Built by</dt><dd>Rawal Jaisal, Bhati Rajput ruler</dd>
+        <dt>Style</dt><dd>Rajput hill fort</dd>
+        <dt>Location</dt><dd>Trikuta Hill, city centre</dd>
+        <dt>Gates</dt><dd>Akhai Pol, Suraj Pol, Ganesh Pol, Hawa Pol</dd>
+        <dt>Visiting hours</dt><dd>Open all day; museums about 8:00 am – 6:00 pm</dd>
+        <dt>Status</dt><dd>UNESCO World Heritage Site (2013), Hill Forts of Rajasthan</dd>
+        </dl>
+      </div>
+    </div>
+    <figure class="arch tall"><img src="images/photos/jaisalmer-fort.jpg" alt="Jaisalmer Fort" width="600" height="800"></figure>
+  </section>
+
+  <div class="site-body">
+    <section class="panel">
+      <h2>About the site</h2>
+      <div class="prose">
+        <p>Jaisalmer Fort rises from Trikuta Hill above the Thar Desert. Its walls of yellow sandstone turn honey-gold in the late afternoon, which is why it is called the Sonar Quila, the Golden Fort. A ring of 99 bastions guards the outer wall, and visitors climb to the top through four massive gates: Akhai Pol, Suraj Pol, Ganesh Pol and Hawa Pol.</p>
+        <p>This is one of the few &quot;living forts&quot; in the world. Thousands of people still live inside its walls, in narrow lanes lined with houses, shops, guesthouses, Jain temples and the Maharawal&#x27;s palace. Because so many people live here, water use and drainage have become a real threat to its foundations, and conservation groups are working to protect it.</p>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>History</h2>
+      <div class="prose">
+        <p>Rawal Jaisal, a Bhati Rajput chief, founded the fort and the city named after him in 1156, moving his capital from Lodurva. The site sat on the caravan routes that carried silk, spices and opium between India, Persia and Central Asia, and the trade made Jaisalmer rich.</p>
+        <p>The fort survived several sieges, including one by the armies of Alauddin Khalji at the end of the 13th century. In the 1570s Jaisalmer made peace with the Mughal emperor Akbar, and in 1818 it signed a treaty with the British. After independence it became part of Rajasthan in 1949. Satyajit Ray&#x27;s film Sonar Kella (1974) made the fort famous across India.</p>
+      </div>
+    </section>
+    <section class="panel wide">
+      <h2>Timeline</h2>
+      <ol class="timeline">
+        <li><span class="yr">1156</span>Rawal Jaisal founds the fort and city</li>
+        <li><span class="yr">c. 1295</span>Siege by the armies of Alauddin Khalji</li>
+        <li><span class="yr">1818</span>Treaty with the British East India Company</li>
+        <li><span class="yr">1974</span>Satyajit Ray films Sonar Kella here</li>
+        <li><span class="yr">2013</span>Listed by UNESCO among the Hill Forts of Rajasthan</li>
+      </ol>
+    </section>
+  </div>
+  <nav class="pager" aria-label="Other heritage sites"><a class="btn btn-ghost" href="heritage.html">← All heritage sites</a><a class="btn btn-gold" href="jain-temples.html">Jain Temples of the Fort →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Jaisalmer Heritage Trails · a guide to the Golden City of the Thar</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="hotel.html">Hotel Booking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Phone menu: show or hide the tabs
+  (function () {
+    var header = document.querySelector('.site-header');
+    var btn = document.querySelector('.menu-toggle');
+    btn.addEventListener('click', function () {
+      var open = header.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gadisar Lake | Jaisalmer Tourism</title>
+<meta name="description" content="A visitor's guide to the heritage sites of Jaisalmer, the Golden City of Rajasthan.">
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span class="brand-name">Jaisalmer</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="nav" id="main-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="heritage.html" class="active" aria-current="page">Heritage</a></li>
+          <li><a href="hotel.html">Hotel Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="heritage.html">Heritage</a> / Gadisar Lake</p>
+  <section class="site-hero">
+    <div>
+      <p class="eyebrow">Heritage site 04 of 12 · <span lang="hi" class="devanagari">गड़ीसर झील</span></p>
+      <h1>Gadisar Lake</h1>
+      <p class="tagline">The lake that watered a city</p>
+      <div class="facts">
+        <dl>
+        <dt>Built</dt><dd>Rebuilt 1367</dd>
+        <dt>Built by</dt><dd>Maharawal Gadsi Singh</dd>
+        <dt>Style</dt><dd>Rainwater reservoir with ghats and pavilions</dd>
+        <dt>Location</dt><dd>South-east of the fort</dd>
+        <dt>Gateway</dt><dd>Tilon ki Pol</dd>
+        <dt>Visiting hours</dt><dd>Open all day; boating in the daytime</dd>
+        <dt>Best time</dt><dd>Sunrise, and winter for migratory birds</dd>
+        </dl>
+      </div>
+    </div>
+    <figure class="arch tall"><img src="images/photos/gadisar-lake.jpg" alt="Gadisar Lake" width="600" height="800"></figure>
+  </section>
+
+  <div class="site-body">
+    <section class="panel">
+      <h2>About the site</h2>
+      <div class="prose">
+        <p>Gadisar Lake is a large reservoir surrounded by stone ghats, small shrines and chhatris standing on platforms in the water. Visitors enter through Tilon ki Pol, a carved gateway in golden sandstone, and can hire paddle boats or simply watch the catfish and pigeons at the steps.</p>
+        <p>At sunrise the fort can be seen glowing on the horizon, and in winter the lake attracts migratory birds. It is one of the most peaceful places in Jaisalmer.</p>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>History</h2>
+      <div class="prose">
+        <p>Rawal Jaisal first dug a tank here, and in 1367 Maharawal Gadsi Singh rebuilt and enlarged it. Rainwater from the surrounding land collected in the lake, and for centuries it was the main water supply for the city.</p>
+        <p>The gateway, Tilon ki Pol, is said to have been built by Tilon, a wealthy courtesan. When the Maharawal refused to walk beneath a gate built by her, she added a temple of Krishna on top, so the gate could not be pulled down.</p>
+      </div>
+    </section>
+    <section class="panel wide">
+      <h2>Timeline</h2>
+      <ol class="timeline">
+        <li><span class="yr">1156</span>First tank dug in the time of Rawal Jaisal</li>
+        <li><span class="yr">1367</span>Maharawal Gadsi Singh rebuilds the lake</li>
+        <li><span class="yr">19th c.</span>Tilon ki Pol gateway built</li>
+      </ol>
+    </section>
+  </div>
+  <nav class="pager" aria-label="Other heritage sites"><a class="btn btn-ghost" href="kuldhara.html">← Kuldhara</a><a class="btn btn-gold" href="laxminath-temple.html">Laxminath Temple →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Jaisalmer Heritage Trails · a guide to the Golden City of the Thar</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="hotel.html">Hotel Booking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Phone menu: show or hide the tabs
+  (function () {
+    var header = document.querySelector('.site-header');
+    var btn = document.querySelector('.menu-toggle');
+    btn.addEventListener('click', function () {
+      var open = header.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>

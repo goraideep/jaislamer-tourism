@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hotel Booking | Jaisalmer Tourism</title>
+<meta name="description" content="A visitor's guide to the heritage sites of Jaisalmer, the Golden City of Rajasthan.">
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span class="brand-name">Jaisalmer</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="nav" id="main-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="heritage.html">Heritage</a></li>
+          <li><a href="hotel.html" class="active" aria-current="page">Hotel Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Hotel booking</h1>
+  <p class="lede">Fill in the form to reserve a stay. The estimate on the right updates as you choose. Fields marked <span class="req">*</span> are required.</p>
+
+  <div class="booking-layout">
+  <form class="booking" id="booking-form" action="#" method="post" novalidate>
+    <fieldset>
+      <legend>Guest details</legend>
+      <div class="field full">
+        <label for="full-name">Full name <span class="req">*</span></label>
+        <input type="text" id="full-name" name="full_name" placeholder="As on your ID" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email <span class="req">*</span></label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="phone">Phone <span class="req">*</span></label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel" pattern="[0-9+ ()-]{8,}" required>
+      </div>
+      <div class="field">
+        <label for="dob">Date of birth</label>
+        <input type="date" id="dob" name="dob">
+      </div>
+      <div class="field">
+        <span class="label" id="gender-label">Gender</span>
+        <div class="pills" role="radiogroup" aria-labelledby="gender-label">
+          <label><input type="radio" id="g-f" name="gender" value="Female"> Female</label>
+          <label><input type="radio" id="g-m" name="gender" value="Male"> Male</label>
+          <label><input type="radio" id="g-o" name="gender" value="Other"> Other</label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="nationality">Nationality <span class="req">*</span></label>
+        <select id="nationality" name="nationality" required>
+          <option value="">Select country</option>
+          <option>India</option>
+          <option>Non-Resident Indian / OCI</option>
+          <option>United Kingdom</option>
+          <option>United States</option>
+          <option>Other country</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="id-type">ID type <span class="req">*</span></label>
+        <select id="id-type" name="id_type" required>
+          <option value="">Select ID</option>
+          <option>Aadhaar card</option>
+          <option>Passport</option>
+          <option>Voter ID</option>
+          <option>Driving licence</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="id-number">ID number <span class="req">*</span></label>
+        <input type="text" id="id-number" name="id_number" required>
+      </div>
+      <div class="field">
+        <label for="id-file">Upload ID <span class="hint">(optional)</span></label>
+        <input type="file" id="id-file" name="id_file" accept=".pdf,image/*">
+      </div>
+      <div class="field full">
+        <label for="address">Home address</label>
+        <textarea id="address" name="address" rows="3" autocomplete="street-address"></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Your stay</legend>
+      <div class="field full">
+        <label for="hotel">Hotel <span class="req">*</span></label>
+        <select id="hotel" name="hotel" required>
+              <option value="">Choose a hotel</option>
+              <option value="sonar-quila-haveli">Sonar Quila Haveli — inside the fort</option>
+              <option value="gadisar-lakeview">Gadisar Lakeview Inn — by the lake</option>
+              <option value="patwa-lane">Patwa Lane Heritage Hotel — near the havelis</option>
+              <option value="bada-bagh-retreat">Bada Bagh Retreat — Ramgarh Road</option>
+              <option value="sam-dune-camp">Sam Dunes Desert Camp — 42 km west (Swiss tents)</option>
+              <option value="station-residency">Station Road Residency — near the railway station</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="checkin">Check-in <span class="req">*</span></label>
+        <input type="date" id="checkin" name="checkin" required>
+      </div>
+      <div class="field">
+        <label for="checkout">Check-out <span class="req">*</span></label>
+        <input type="date" id="checkout" name="checkout" required>
+      </div>
+      <div class="field">
+        <label for="rooms">Rooms <span class="req">*</span></label>
+        <input type="number" id="rooms" name="rooms" min="1" max="10" value="1" required>
+      </div>
+      <div class="field">
+        <label for="arrival">Arrival time</label>
+        <input type="time" id="arrival" name="arrival" value="14:00">
+      </div>
+      <div class="field">
+        <label for="adults">Adults <span class="req">*</span></label>
+        <input type="number" id="adults" name="adults" min="1" max="20" value="2" required>
+      </div>
+      <div class="field">
+        <label for="children">Children <span class="hint">(under 12)</span></label>
+        <input type="number" id="children" name="children" min="0" max="10" value="0">
+      </div>
+      <div class="field full">
+        <span class="label">Room type <span class="req">*</span></span>
+        <div class="room-options">
+          <label><input type="radio" id="room-std" name="room" value="Standard" data-rate="3500" required><b>Standard</b><small>Queen bed, courtyard view</small><span class="price">₹3,500 / night</span></label>
+          <label><input type="radio" id="room-dlx" name="room" value="Deluxe" data-rate="5800" checked><b>Deluxe</b><small>King or twin beds, carved jharokha</small><span class="price">₹5,800 / night</span></label>
+          <label><input type="radio" id="room-ste" name="room" value="Haveli Suite" data-rate="11000"><b>Haveli Suite</b><small>Lounge and a view of the fort</small><span class="price">₹11,000 / night</span></label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Meals and extras</legend>
+      <div class="field full">
+        <span class="label" id="meal-label">Meal plan</span>
+        <div class="pills" role="radiogroup" aria-labelledby="meal-label">
+          <label><input type="radio" name="meal" value="Room only" data-rate="0" checked> Room only</label>
+          <label><input type="radio" name="meal" value="Breakfast" data-rate="500"> Breakfast · ₹500</label>
+          <label><input type="radio" name="meal" value="Breakfast and dinner" data-rate="1400"> Breakfast + dinner · ₹1,400</label>
+        </div>
+        <span class="hint">Meal prices are per guest, per night.</span>
+      </div>
+      <div class="field full">
+        <span class="label">Extras</span>
+        <div class="pills">
+          <label><input type="checkbox" name="extras" value="Airport or station pickup" data-cost="1200"> Station pickup · ₹1,200</label>
+          <label><input type="checkbox" name="extras" value="Heritage walk with a guide" data-cost="1800"> Guided heritage walk · ₹1,800</label>
+          <label><input type="checkbox" name="extras" value="Camel safari at Sam dunes" data-cost="2500"> Camel safari · ₹2,500</label>
+          <label><input type="checkbox" name="extras" value="Folk music evening" data-cost="900"> Folk music evening · ₹900</label>
+        </div>
+      </div>
+      <div class="field full">
+        <span class="label">Sites you plan to visit</span>
+        <div class="pills">
+            <label><input type="checkbox" name="sites" value="jaisalmer-fort"> Jaisalmer Fort</label>
+            <label><input type="checkbox" name="sites" value="jain-temples"> Jain Temples of the Fort</label>
+            <label><input type="checkbox" name="sites" value="kuldhara"> Kuldhara</label>
+            <label><input type="checkbox" name="sites" value="gadisar-lake"> Gadisar Lake</label>
+            <label><input type="checkbox" name="sites" value="laxminath-temple"> Laxminath Temple</label>
+            <label><input type="checkbox" name="sites" value="raj-mahal"> Raj Mahal</label>
+            <label><input type="checkbox" name="sites" value="bada-bagh"> Bada Bagh</label>
+            <label><input type="checkbox" name="sites" value="patwon-ki-haveli"> Patwon ki Haveli</label>
+            <label><input type="checkbox" name="sites" value="salim-singh-ki-haveli"> Salim Singh ki Haveli</label>
+            <label><input type="checkbox" name="sites" value="mandir-palace"> Mandir Palace</label>
+            <label><input type="checkbox" name="sites" value="nathmal-ki-haveli"> Nathmal ki Haveli</label>
+            <label><input type="checkbox" name="sites" value="longewala-war-memorial"> Longewala War Memorial</label>
+        </div>
+      </div>
+      <div class="field full">
+        <label for="requests">Special requests</label>
+        <textarea id="requests" name="requests" placeholder="Early check-in, a cot for a baby, a room on a lower floor…"></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Payment</legend>
+      <div class="field full">
+        <span class="label" id="pay-label">Payment method <span class="req">*</span></span>
+        <div class="pills" role="radiogroup" aria-labelledby="pay-label">
+          <label><input type="radio" name="payment" value="Pay at hotel" checked> Pay at hotel</label>
+          <label><input type="radio" name="payment" value="UPI"> UPI</label>
+          <label><input type="radio" name="payment" value="Card"> Credit / debit card</label>
+          <label><input type="radio" name="payment" value="Net banking"> Net banking</label>
+        </div>
+      </div>
+      <div class="field full check-row">
+        <label><input type="checkbox" id="terms" name="terms" required> I agree to the hotel's cancellation policy <span class="req">*</span></label>
+        <label><input type="checkbox" id="news" name="newsletter"> Send me news about festivals and heritage walks</label>
+      </div>
+    </fieldset>
+
+    <p class="form-error" id="form-error" role="alert" hidden></p>
+    <div class="actions">
+      <button class="btn btn-gold" type="submit">Request booking</button>
+      <button class="btn btn-ghost" type="reset">Clear form</button>
+    </div>
+  </form>
+
+  <aside class="estimate" aria-live="polite">
+    <h2>Your estimate</h2>
+    <dl>
+      <dt>Stay</dt><dd id="est-stay">Not chosen</dd>
+      <dt>Nights</dt><dd id="est-nights">0</dd>
+      <dt>Rooms</dt><dd id="est-rooms">₹0</dd>
+      <dt>Meals</dt><dd id="est-meals">₹0</dd>
+      <dt>Extras</dt><dd id="est-extras">₹0</dd>
+      <dt class="total">Total</dt><dd class="total" id="est-total">₹0</dd>
+    </dl>
+    <p class="note">Estimate only. Taxes are not included.</p>
+  </aside>
+  </div>
+
+  <section class="panel confirmation" id="confirmation" hidden>
+    <h2>Booking request received</h2>
+    <p>Thank you. Here is a summary of your request. A confirmation will be sent to your email.</p>
+    <dl id="summary"></dl>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Jaisalmer Heritage Trails · a guide to the Golden City of the Thar</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="hotel.html">Hotel Booking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Phone menu: show or hide the tabs
+  (function () {
+    var header = document.querySelector('.site-header');
+    var btn = document.querySelector('.menu-toggle');
+    btn.addEventListener('click', function () {
+      var open = header.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+<script>
+  // Booking form: live estimate, validation and a summary on submit
+  (function () {
+    var form = document.getElementById('booking-form');
+    var cin = document.getElementById('checkin');
+    var cout = document.getElementById('checkout');
+    var err = document.getElementById('form-error');
+    var conf = document.getElementById('confirmation');
+    function rupees(n) { return '₹' + n.toLocaleString('en-IN'); }
+    function iso(d) { return d.toISOString().slice(0, 10); }
+    var today = new Date();
+    cin.min = iso(today);
+    cout.min = iso(new Date(today.getTime() + 86400000));
+    document.getElementById('dob').max = iso(today);
+
+    function calc() {
+      var nights = 0;
+      if (cin.value && cout.value) nights = Math.max(0, Math.round((new Date(cout.value) - new Date(cin.value)) / 86400000));
+      var rooms = Math.max(1, Number(form.rooms.value) || 1);
+      var guests = (Number(form.adults.value) || 0) + (Number(form.children.value) || 0);
+      var room = form.querySelector('input[name="room"]:checked');
+      var meal = form.querySelector('input[name="meal"]:checked');
+      var roomCost = room ? nights * rooms * Number(room.dataset.rate) : 0;
+      var mealCost = meal ? nights * guests * Number(meal.dataset.rate) : 0;
+      var extras = 0;
+      form.querySelectorAll('input[name="extras"]:checked').forEach(function (x) { extras += Number(x.dataset.cost); });
+      var hotel = form.hotel.options[form.hotel.selectedIndex];
+      return { nights: nights, rooms: rooms, room: room, meal: meal, roomCost: roomCost, mealCost: mealCost,
+               extras: extras, total: roomCost + mealCost + extras, hotel: form.hotel.value ? hotel.text.split(' — ')[0] : 'Not chosen' };
+    }
+    function update() {
+      var c = calc();
+      document.getElementById('est-stay').textContent = c.hotel;
+      document.getElementById('est-nights').textContent = c.nights;
+      document.getElementById('est-rooms').textContent = rupees(c.roomCost);
+      document.getElementById('est-meals').textContent = rupees(c.mealCost);
+      document.getElementById('est-extras').textContent = rupees(c.extras);
+      document.getElementById('est-total').textContent = rupees(c.total);
+    }
+    form.addEventListener('input', update);
+    form.addEventListener('change', update);
+    cin.addEventListener('change', function () {
+      if (!cin.value) return;
+      var next = new Date(cin.value); next.setDate(next.getDate() + 1);
+      cout.min = iso(next);
+      if (cout.value && cout.value <= cin.value) cout.value = iso(next);
+      update();
+    });
+
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      err.hidden = true;
+      if (!form.checkValidity()) {
+        var bad = form.querySelector(':invalid');
+        var lab = bad.labels && bad.labels[0] ? bad.labels[0].textContent.replace('*', '').trim() : 'a required field';
+        err.textContent = 'Please check "' + lab + '" before sending your request.';
+        err.hidden = false; bad.focus(); return;
+      }
+      if (cout.value <= cin.value) {
+        err.textContent = 'Check-out must be at least one day after check-in.';
+        err.hidden = false; cout.focus(); return;
+      }
+      var c = calc();
+      var data = new FormData(form);
+      var rows = [
+        ['Reference', 'JSM-' + Math.floor(100000 + Math.random() * 900000)],
+        ['Guest', data.get('full_name')],
+        ['Hotel', form.hotel.options[form.hotel.selectedIndex].text],
+        ['Dates', cin.value + ' to ' + cout.value + ' (' + c.nights + ' night' + (c.nights > 1 ? 's' : '') + ')'],
+        ['Rooms', c.rooms + ' × ' + c.room.value],
+        ['Guests', data.get('adults') + ' adult(s), ' + data.get('children') + ' child(ren)'],
+        ['Meal plan', c.meal.value],
+        ['Extras', data.getAll('extras').join(', ') || 'None'],
+        ['Payment', data.get('payment')],
+        ['Estimated total', rupees(c.total) + ' + taxes']
+      ];
+      var dl = document.getElementById('summary');
+      dl.innerHTML = '';
+      rows.forEach(function (r) {
+        var dt = document.createElement('dt'); dt.textContent = r[0];
+        var dd = document.createElement('dd'); dd.textContent = r[1];
+        dl.appendChild(dt); dl.appendChild(dd);
+      });
+      conf.hidden = false;
+      conf.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    form.addEventListener('reset', function () { err.hidden = true; conf.hidden = true; setTimeout(update, 0); });
+    update();
+  })();
+</script>
+</body>
+</html>

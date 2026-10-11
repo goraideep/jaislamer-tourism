@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patwon ki Haveli | Jaisalmer Tourism</title>
+<meta name="description" content="A visitor's guide to the heritage sites of Jaisalmer, the Golden City of Rajasthan.">
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span class="brand-name">Jaisalmer</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="nav" id="main-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="heritage.html" class="active" aria-current="page">Heritage</a></li>
+          <li><a href="hotel.html">Hotel Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="heritage.html">Heritage</a> / Patwon ki Haveli</p>
+  <section class="site-hero">
+    <div>
+      <p class="eyebrow">Heritage site 08 of 12 · <span lang="hi" class="devanagari">पटवों की हवेली</span></p>
+      <h1>Patwon ki Haveli</h1>
+      <p class="tagline">Five mansions of a brocade merchant</p>
+      <div class="facts">
+        <dl>
+        <dt>Built</dt><dd>1805 – c. 1860</dd>
+        <dt>Built by</dt><dd>Guman Chand Patwa, a wealthy trader, for his five sons</dd>
+        <dt>Style</dt><dd>Rajasthani haveli</dd>
+        <dt>Location</dt><dd>Patwon ki Gali, below the fort</dd>
+        <dt>Now</dt><dd>Partly a museum, partly government offices</dd>
+        <dt>Visiting hours</dt><dd>Daily, about 9:00 am – 6:00 pm</dd>
+        <dt>Highlights</dt><dd>Carved jharokhas, mirror work, painted rooms</dd>
+        </dl>
+      </div>
+    </div>
+    <figure class="arch tall"><img src="images/photos/patwon-ki-haveli.jpg" alt="Patwon ki Haveli" width="600" height="800"></figure>
+  </section>
+
+  <div class="site-body">
+    <section class="panel">
+      <h2>About the site</h2>
+      <div class="prose">
+        <p>Patwon ki Haveli is a group of five havelis, or mansions, built side by side in a narrow lane. Their sandstone fronts are covered from top to bottom with jharokhas, carved brackets and lattice screens, so that the whole street looks like a wall of lace.</p>
+        <p>The first and largest haveli is open as a museum. Its rooms show how a rich merchant family lived, with painted ceilings, mirror work, brass utensils and traditional furniture.</p>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>History</h2>
+      <div class="prose">
+        <p>Guman Chand Patwa made his fortune trading in brocade and gold and silver thread, which is where the name Patwa comes from. In 1805 he began building a haveli for each of his five sons, and the work took around fifty years to complete.</p>
+        <p>As trade routes changed in the 19th century, the family&#x27;s fortunes faded and they moved away. Today the havelis are among the most photographed buildings in Rajasthan.</p>
+      </div>
+    </section>
+    <section class="panel wide">
+      <h2>Timeline</h2>
+      <ol class="timeline">
+        <li><span class="yr">1805</span>Guman Chand Patwa begins the first haveli</li>
+        <li><span class="yr">c. 1860</span>All five havelis completed</li>
+        <li><span class="yr">Today</span>One haveli open as a museum</li>
+      </ol>
+    </section>
+  </div>
+  <nav class="pager" aria-label="Other heritage sites"><a class="btn btn-ghost" href="bada-bagh.html">← Bada Bagh</a><a class="btn btn-gold" href="salim-singh-ki-haveli.html">Salim Singh ki Haveli →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Jaisalmer Heritage Trails · a guide to the Golden City of the Thar</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="hotel.html">Hotel Booking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Phone menu: show or hide the tabs
+  (function () {
+    var header = document.querySelector('.site-header');
+    var btn = document.querySelector('.menu-toggle');
+    btn.addEventListener('click', function () {
+      var open = header.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>

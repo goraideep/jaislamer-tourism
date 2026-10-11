@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laxminath Temple | Jaisalmer Tourism</title>
+<meta name="description" content="A visitor's guide to the heritage sites of Jaisalmer, the Golden City of Rajasthan.">
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span class="brand-name">Jaisalmer</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="nav" id="main-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="heritage.html" class="active" aria-current="page">Heritage</a></li>
+          <li><a href="hotel.html">Hotel Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="heritage.html">Heritage</a> / Laxminath Temple</p>
+  <section class="site-hero">
+    <div>
+      <p class="eyebrow">Heritage site 05 of 12 · <span lang="hi" class="devanagari">लक्ष्मीनाथ मंदिर</span></p>
+      <h1>Laxminath Temple</h1>
+      <p class="tagline">Vishnu&#x27;s shrine at the heart of the fort</p>
+      <div class="facts">
+        <dl>
+        <dt>Built</dt><dd>Late 15th century</dd>
+        <dt>Built by</dt><dd>Rulers of Jaisalmer</dd>
+        <dt>Style</dt><dd>Nagara Hindu temple</dd>
+        <dt>Location</dt><dd>Inside Jaisalmer Fort, near the main square</dd>
+        <dt>Deities</dt><dd>Vishnu (Laxminath) and Lakshmi</dd>
+        <dt>Visiting hours</dt><dd>Daily, morning and evening</dd>
+        <dt>Entry</dt><dd>Free</dd>
+        </dl>
+      </div>
+    </div>
+    <figure class="arch tall"><img src="images/laxminath-temple-day.svg" alt="Laxminath Temple" width="600" height="800"></figure>
+  </section>
+
+  <div class="site-body">
+    <section class="panel">
+      <h2>About the site</h2>
+      <div class="prose">
+        <p>Laxminath Temple is the main Hindu temple inside Jaisalmer Fort. It is simpler than the Jain temples nearby, but its doorway is covered with embossed silver showing gods, animals and flowers. Inside, the images of Vishnu and Lakshmi are dressed and decorated by the temple priests every day.</p>
+        <p>The temple is still in daily worship. Visiting during the evening aarti, when lamps are lit and bells are rung, is a good way to see the living side of the fort.</p>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>History</h2>
+      <div class="prose">
+        <p>The temple was built in the late 15th century, when the rulers of Jaisalmer chose Laxminath, a form of Vishnu, as a protector of the kingdom. The Maharawals are said to have ruled as the deity&#x27;s representatives.</p>
+        <p>Over the years devotees and rulers added gifts of silver and gold, which is how the temple came to have its famous decorated doors.</p>
+      </div>
+    </section>
+    <section class="panel wide">
+      <h2>Timeline</h2>
+      <ol class="timeline">
+        <li><span class="yr">Late 15th c.</span>Temple built inside the fort</li>
+        <li><span class="yr">Later centuries</span>Silver doors and decorations added by devotees</li>
+      </ol>
+    </section>
+  </div>
+  <nav class="pager" aria-label="Other heritage sites"><a class="btn btn-ghost" href="gadisar-lake.html">← Gadisar Lake</a><a class="btn btn-gold" href="raj-mahal.html">Raj Mahal →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Jaisalmer Heritage Trails · a guide to the Golden City of the Thar</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="hotel.html">Hotel Booking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Phone menu: show or hide the tabs
+  (function () {
+    var header = document.querySelector('.site-header');
+    var btn = document.querySelector('.menu-toggle');
+    btn.addEventListener('click', function () {
+      var open = header.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>

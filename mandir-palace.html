@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mandir Palace | Jaisalmer Tourism</title>
+<meta name="description" content="A visitor's guide to the heritage sites of Jaisalmer, the Golden City of Rajasthan.">
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span class="brand-name">Jaisalmer</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="nav" id="main-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="heritage.html" class="active" aria-current="page">Heritage</a></li>
+          <li><a href="hotel.html">Hotel Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="heritage.html">Heritage</a> / Mandir Palace</p>
+  <section class="site-hero">
+    <div>
+      <p class="eyebrow">Heritage site 10 of 12 · <span lang="hi" class="devanagari">मंदिर पैलेस</span></p>
+      <h1>Mandir Palace</h1>
+      <p class="tagline">The later home of the royal family</p>
+      <div class="facts">
+        <dl>
+        <dt>Built</dt><dd>19th century</dd>
+        <dt>Built by</dt><dd>Maharawals of Jaisalmer</dd>
+        <dt>Style</dt><dd>Rajput palace with carved towers</dd>
+        <dt>Location</dt><dd>Gandhi Chowk, below the fort</dd>
+        <dt>Landmark</dt><dd>Tazia Tower of Badal Vilas</dd>
+        <dt>Now</dt><dd>Royal residence and heritage hotel</dd>
+        <dt>Visiting</dt><dd>Museum and parts of the palace open to visitors</dd>
+        </dl>
+      </div>
+    </div>
+    <figure class="arch tall"><img src="images/photos/mandir-palace.jpg" alt="Mandir Palace" width="600" height="800"></figure>
+  </section>
+
+  <div class="site-body">
+    <section class="panel">
+      <h2>About the site</h2>
+      <div class="prose">
+        <p>Mandir Palace became the home of the royal family when they left the crowded fort. Its long sandstone front is lined with jharokhas and carved screens, and its courtyards are cooler and more spacious than the old palace above.</p>
+        <p>Its best-known landmark is the Tazia Tower of Badal Vilas, a slim five-storey tower in which each level has its own balcony and becomes narrower as it rises. Part of the palace is now a heritage hotel, and part is still lived in by the royal family.</p>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>History</h2>
+      <div class="prose">
+        <p>In the 19th century the Maharawals built a new palace outside the fort walls, with more space and better water supplies. The name Mandir, &quot;temple&quot;, comes from the shrines within the complex.</p>
+        <p>The Tazia Tower is said to have been built by Muslim craftsmen, who gave it to the ruler. Its tiers recall a tazia, the decorated model of a tomb carried during Muharram processions.</p>
+      </div>
+    </section>
+    <section class="panel wide">
+      <h2>Timeline</h2>
+      <ol class="timeline">
+        <li><span class="yr">19th c.</span>Royal family moves from the fort to Mandir Palace</li>
+        <li><span class="yr">Late 19th c.</span>Badal Vilas and the Tazia Tower built</li>
+        <li><span class="yr">Today</span>Part heritage hotel, part royal residence</li>
+      </ol>
+    </section>
+  </div>
+  <nav class="pager" aria-label="Other heritage sites"><a class="btn btn-ghost" href="salim-singh-ki-haveli.html">← Salim Singh ki Haveli</a><a class="btn btn-gold" href="nathmal-ki-haveli.html">Nathmal ki Haveli →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Jaisalmer Heritage Trails · a guide to the Golden City of the Thar</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="hotel.html">Hotel Booking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Phone menu: show or hide the tabs
+  (function () {
+    var header = document.querySelector('.site-header');
+    var btn = document.querySelector('.menu-toggle');
+    btn.addEventListener('click', function () {
+      var open = header.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>

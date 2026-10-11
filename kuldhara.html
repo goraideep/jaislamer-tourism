@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kuldhara | Jaisalmer Tourism</title>
+<meta name="description" content="A visitor's guide to the heritage sites of Jaisalmer, the Golden City of Rajasthan.">
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span class="brand-name">Jaisalmer</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="nav" id="main-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="heritage.html" class="active" aria-current="page">Heritage</a></li>
+          <li><a href="hotel.html">Hotel Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="heritage.html">Heritage</a> / Kuldhara</p>
+  <section class="site-hero">
+    <div>
+      <p class="eyebrow">Heritage site 03 of 12 · <span lang="hi" class="devanagari">कुलधरा</span></p>
+      <h1>Kuldhara</h1>
+      <p class="tagline">The village emptied overnight</p>
+      <div class="facts">
+        <dl>
+        <dt>Founded</dt><dd>c. 13th century</dd>
+        <dt>Founded by</dt><dd>Paliwal Brahmins</dd>
+        <dt>Abandoned</dt><dd>c. 1825</dd>
+        <dt>Location</dt><dd>About 18 km south-west of Jaisalmer</dd>
+        <dt>Getting there</dt><dd>Taxi or jeep from the city</dd>
+        <dt>Visiting hours</dt><dd>Daily, about 8:00 am – 6:00 pm</dd>
+        <dt>Status</dt><dd>Heritage site maintained by the state government</dd>
+        </dl>
+      </div>
+    </div>
+    <figure class="arch tall"><img src="images/photos/kuldhara.jpg" alt="Kuldhara" width="600" height="800"></figure>
+  </section>
+
+  <div class="site-body">
+    <section class="panel">
+      <h2>About the site</h2>
+      <div class="prose">
+        <p>Kuldhara is a ghost village of roofless stone houses laid out along straight streets. Doorways, stairways, cooking places and grain stores are still easy to see, along with a small temple near the centre. Some houses have been restored so visitors can picture how a family once lived here.</p>
+        <p>The village is quiet and windswept, and its reputation as a haunted place draws many visitors. The best time to come is late afternoon, when the low sun brings out the colour of the stone.</p>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>History</h2>
+      <div class="prose">
+        <p>Kuldhara was founded by Paliwal Brahmins, a community of skilled farmers and traders who knew how to grow crops in the desert. For about six hundred years it was a prosperous village, one of a cluster of 84 Paliwal settlements around Jaisalmer.</p>
+        <p>Around 1825 the people of Kuldhara and the nearby villages left, all at once. Legend says they fled the cruel diwan Salim Singh, who demanded the village chief&#x27;s daughter, and that they cursed the land so no one could settle there again. Historians point to heavy taxes, falling water supplies and possibly an earthquake as more likely causes.</p>
+      </div>
+    </section>
+    <section class="panel wide">
+      <h2>Timeline</h2>
+      <ol class="timeline">
+        <li><span class="yr">13th c.</span>Paliwal Brahmins found the village</li>
+        <li><span class="yr">c. 1825</span>The whole village is abandoned, along with nearby Paliwal settlements</li>
+        <li><span class="yr">2010s</span>Partly restored and opened to visitors</li>
+      </ol>
+    </section>
+  </div>
+  <nav class="pager" aria-label="Other heritage sites"><a class="btn btn-ghost" href="jain-temples.html">← Jain Temples of the Fort</a><a class="btn btn-gold" href="gadisar-lake.html">Gadisar Lake →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Jaisalmer Heritage Trails · a guide to the Golden City of the Thar</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="hotel.html">Hotel Booking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Phone menu: show or hide the tabs
+  (function () {
+    var header = document.querySelector('.site-header');
+    var btn = document.querySelector('.menu-toggle');
+    btn.addEventListener('click', function () {
+      var open = header.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>

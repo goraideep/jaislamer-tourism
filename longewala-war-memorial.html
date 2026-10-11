@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Longewala War Memorial | Jaisalmer Tourism</title>
+<meta name="description" content="A visitor's guide to the heritage sites of Jaisalmer, the Golden City of Rajasthan.">
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span class="brand-name">Jaisalmer</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="nav" id="main-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="heritage.html" class="active" aria-current="page">Heritage</a></li>
+          <li><a href="hotel.html">Hotel Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="heritage.html">Heritage</a> / Longewala War Memorial</p>
+  <section class="site-hero">
+    <div>
+      <p class="eyebrow">Heritage site 12 of 12 · <span lang="hi" class="devanagari">लोंगेवाला युद्ध स्मारक</span></p>
+      <h1>Longewala War Memorial</h1>
+      <p class="tagline">Where 120 soldiers held the line</p>
+      <div class="facts">
+        <dl>
+        <dt>Event</dt><dd>Battle of Longewala, 4 – 7 December 1971</dd>
+        <dt>Defenders</dt><dd>A company of 23 Punjab under Major Kuldip Singh Chandpuri</dd>
+        <dt>Type</dt><dd>War memorial and open-air museum</dd>
+        <dt>Location</dt><dd>About 120 km north-west of Jaisalmer</dd>
+        <dt>Nearby</dt><dd>Tanot Mata Temple</dd>
+        <dt>Visiting hours</dt><dd>Daily, daytime</dd>
+        <dt>Note</dt><dd>Close to the border; carry ID</dd>
+        </dl>
+      </div>
+    </div>
+    <figure class="arch tall"><img src="images/photos/longewala-war-memorial.jpg" alt="Longewala War Memorial" width="600" height="800"></figure>
+  </section>
+
+  <div class="site-body">
+    <section class="panel">
+      <h2>About the site</h2>
+      <div class="prose">
+        <p>The Longewala War Memorial marks the site of one of the best-known battles of the 1971 India–Pakistan war. Captured tanks and vehicles stand in the sand beside the memorial, and a small museum tells the story of the battle with maps and photographs.</p>
+        <p>The drive from Jaisalmer crosses open desert and passes the Tanot Mata Temple, which is looked after by the Border Security Force.</p>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>History</h2>
+      <div class="prose">
+        <p>On the night of 4 December 1971, a Pakistani armoured column with dozens of tanks advanced on the Longewala post, held by about 120 soldiers of the 23rd Battalion of the Punjab Regiment. Under Major Kuldip Singh Chandpuri, the company held its position through the night.</p>
+        <p>At first light, Hunter jets of the Indian Air Force flying from Jaisalmer attacked the column and destroyed many of its tanks. Major Chandpuri received the Maha Vir Chakra, and the battle later inspired the Hindi film Border (1997).</p>
+      </div>
+    </section>
+    <section class="panel wide">
+      <h2>Timeline</h2>
+      <ol class="timeline">
+        <li><span class="yr">4 Dec 1971</span>Pakistani armoured column advances on Longewala</li>
+        <li><span class="yr">5 Dec 1971</span>Indian Air Force strikes the column at dawn</li>
+        <li><span class="yr">1997</span>The battle is retold in the film Border</li>
+      </ol>
+    </section>
+  </div>
+  <nav class="pager" aria-label="Other heritage sites"><a class="btn btn-ghost" href="nathmal-ki-haveli.html">← Nathmal ki Haveli</a><a class="btn btn-gold" href="heritage.html">All heritage sites →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Jaisalmer Heritage Trails · a guide to the Golden City of the Thar</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="hotel.html">Hotel Booking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Phone menu: show or hide the tabs
+  (function () {
+    var header = document.querySelector('.site-header');
+    var btn = document.querySelector('.menu-toggle');
+    btn.addEventListener('click', function () {
+      var open = header.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+
+</body>
+</html>
